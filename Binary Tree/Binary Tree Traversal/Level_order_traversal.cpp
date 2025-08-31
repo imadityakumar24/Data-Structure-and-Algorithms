@@ -77,17 +77,18 @@ public:
 
         while (!q.empty()) {
             int size = q.size();
-            vector <int> temp;
+            vector <int> level;
             for (int i = 0; i < size; i++) {
                 TreeNode* data = q.front();
                 q.pop();
                 if (data->left != nullptr) q.push(data->left);
                 if (data->right != nullptr) q.push(data->right);
-                temp.push_back(data->val);
+                level.push_back(data->val);
             }
-            ans.push_back(temp);
+            ans.push_back(level);
         }
 
         return ans;
     }
+
 };
