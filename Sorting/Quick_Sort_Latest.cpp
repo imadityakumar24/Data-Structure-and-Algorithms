@@ -1,3 +1,10 @@
+
+// quick sort
+// tc = best and average -> o(nlogn)
+// tc = worst = o(n^2)
+// sc = O(1) + O(N) auxiliary stack space. that why it is slightly better then merge sort
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -158,5 +165,6 @@ Enter choice (1-3): 3
 
 Sorted using Pivot = Last Element:
 3 4 5 7 9 10
+
 
 */
